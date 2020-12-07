@@ -29,7 +29,7 @@ function generateTemp(){
           alert("please fill empty boxes");
         }else{
         
-        getData(baseURL + zipCode + apiKey)
+        getData(baseURL , zipCode , apiKey)
         .then(function(data){
             console.log(data)
             postData('/weatherData' , {temp : data.main.temp , date:newDate , content : content});
