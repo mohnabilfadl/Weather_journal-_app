@@ -1,0 +1,232 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+html {
+    height: 100vh;
+}
+
+body{
+    background: hsl(22, 30%, 34%);
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #3c486f;
+}
+
+#app{
+    display: -ms-grid;
+    display: grid;
+    grid-auto-rows: minmax(8em, auto);
+    width: 90%;
+    background-color: rgb(128, 128, 128);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    grid-gap: 0.5em;
+    font-family: 'Oswald', sans-serif;
+    margin: 0 auto;
+}
+/* header */
+header {
+    padding: 2em;
+}
+
+h1 {
+    font-size: 2.6rem;
+    text-align: center;
+}
+/* main */
+main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+/* output of weather app elements (entry)*/
+.entry {
+    background: rgba(60, 72, 111, 0.06);
+    margin-left: 1em;
+    width: 60%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    background-color: #3c486f;
+    color: #fff;
+    padding: 0.5em;
+    margin-bottom: 0.5em;
+}
+.entry span {
+    color: #3c486f;
+}
+
+.entry p {
+    color: #9f6210;
+    padding: 0.5em;
+    width: 10em;
+    line-height: 2rem;
+    word-wrap: break-word;   
+}
+
+/*  Form elements */
+label{
+    display:block;
+    font-size: 1.4rem;
+    color: #9f6210;
+    margin-top: 0.6em;
+}
+
+input{
+    display:block;
+    width: 10em;
+    background-color: rgba(159, 98, 16, 0.17);
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    padding: 0.5em;
+    color: #3c486f;
+
+}
+
+textarea{
+    background-color: rgba(159, 98, 16, 0.17);
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    resize: none;
+    width: 13em;
+    height: 8em;
+    padding: 0.5em;
+    color: #3c486f;
+}
+.holder.headline{
+    font-size: 40px;
+    text-align: center;
+}
+
+button {
+    width: 6em;
+    height: 2em;
+    background: #9f6210;
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+    border: none;
+    -webkit-box-shadow: 2px 4px 5px #444;
+            box-shadow: 2px 4px 5px #444;
+    margin-top: 0.75em;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+}
+
+button:hover {
+    background-color: #92590d;
+}
+
+
+/* footer */
+footer {
+    font-size: 0.85rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+footer p {
+    text-align: center;
+}
+.proj-name {
+    color:#9f6210;
+}
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+/* Style for Placeholder Text*/
+::-webkit-input-placeholder { /* Firefox, Chrome, Opera */ 
+    color: #c0a98a; 
+    font-family: 'Oswald', sans-serif;
+
+}
+::-moz-placeholder { /* Firefox, Chrome, Opera */ 
+    color: #c0a98a; 
+    font-family: 'Oswald', sans-serif;
+
+}
+:-ms-input-placeholder { /* Firefox, Chrome, Opera */ 
+    color: #c0a98a; 
+    font-family: 'Oswald', sans-serif;
+
+}
+::-ms-input-placeholder { /* Firefox, Chrome, Opera */ 
+    color: #c0a98a; 
+    font-family: 'Oswald', sans-serif;
+
+}
+::placeholder { /* Firefox, Chrome, Opera */ 
+    color: #c0a98a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */ 
+    color: #c0a98a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+  
+::-ms-input-placeholder { /* Microsoft Edge */ 
+    color: #c0a98a; 
+    font-family: 'Oswald', sans-serif;
+
+} 
+
+/* Style for small screen */
+@media only screen and (max-width: 44em) {
+    main {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .entry {
+        min-height: 10em;
+        margin-top: 1.5em;
+        width: 90%;
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-top: 1em;
+    }
+
+    h2 {
+        padding: 0.4em;
+        font-size: 1.4rem;
+    }
+
+    button {
+        margin: 0.5em auto;
+        display: block;
+    }
+
+}
+
+.page__footer {
+    padding: 3em;
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+}
