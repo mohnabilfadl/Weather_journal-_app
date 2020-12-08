@@ -83,7 +83,7 @@ const updateUI = async () => {
       const allData = await request.json();
     
       date.innerHTML= `Date: ${allData.date}`;
-      temp.innerHTML= `Temprature: ${allData.temp}`;
+      temp.innerHTML= `Temprature: ${allData.temp} °c`;
       content.innerHTML= `I Feel : ${allData.content}`;
 
     // after update the text field will be clear
